@@ -1,0 +1,23 @@
+<package format="2">
+  <name>amcl</name>
+  <version>0.0.0</version>
+  <description>The description of your package</description>
+
+  <maintainer email="your_email@example.com">Your Name</maintainer>
+  <license>TODO</license>
+
+  <!-- Build tool dependencies -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Other dependencies -->
+  <build_depend>roscpp</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <exec_depend>roscpp</exec_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <build_depend>genmsg</build_depend>
+  <build_export_depend>genmsg</build_export_depend>
+  <exec_depend>genmsg</exec_depend>
+  <!-- More tags here -->
+</package>

@@ -1,0 +1,21 @@
+digraph G {
+"tianracer/base_footprint" -> "tianracer/base_link"[label="Broadcaster: /tianracer/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1103.668 sec old)\nBuffer length: 0.000 sec\n"];
+"tianracer/odom" -> "tianracer/base_footprint"[label="Broadcaster: /tianracer/gazebo_odometry_node\nAverage rate: 20.207 Hz\nMost recent transform: 1103.623 ( 0.045 sec old)\nBuffer length: 4.454 sec\n"];
+"tianracer/base_link" -> "tianracer/camera_link"[label="Broadcaster: /tianracer/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1103.668 sec old)\nBuffer length: 0.000 sec\n"];
+"tianracer/base_link" -> "tianracer/base_inertia"[label="Broadcaster: /tianracer/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1103.668 sec old)\nBuffer length: 0.000 sec\n"];
+"tianracer/base_link" -> "tianracer/imu_link"[label="Broadcaster: /tianracer/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1103.668 sec old)\nBuffer length: 0.000 sec\n"];
+"tianracer/base_link" -> "tianracer/laser"[label="Broadcaster: /tianracer/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1103.668 sec old)\nBuffer length: 0.000 sec\n"];
+"tianracer/real_sense" -> "tianracer/realsense_depth"[label="Broadcaster: /tianracer/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1103.668 sec old)\nBuffer length: 0.000 sec\n"];
+"tianracer/base_link" -> "tianracer/real_sense"[label="Broadcaster: /tianracer/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1103.668 sec old)\nBuffer length: 0.000 sec\n"];
+"map" -> "tianracer/odom"[label="Broadcaster: /tianracer/amcl\nAverage rate: 40.170 Hz\nMost recent transform: 1104.115 ( -0.447 sec old)\nBuffer length: 4.481 sec\n"];
+"tianracer/left_steering_hinge" -> "tianracer/left_front_wheel"[label="Broadcaster: /tianracer/robot_state_publisher\nAverage rate: 50.223 Hz\nMost recent transform: 1103.661 ( 0.007 sec old)\nBuffer length: 4.480 sec\n"];
+"tianracer/base_link" -> "tianracer/left_steering_hinge"[label="Broadcaster: /tianracer/robot_state_publisher\nAverage rate: 50.223 Hz\nMost recent transform: 1103.661 ( 0.007 sec old)\nBuffer length: 4.480 sec\n"];
+"tianracer/base_link" -> "tianracer/left_rear_wheel"[label="Broadcaster: /tianracer/robot_state_publisher\nAverage rate: 50.223 Hz\nMost recent transform: 1103.661 ( 0.007 sec old)\nBuffer length: 4.480 sec\n"];
+"tianracer/right_steering_hinge" -> "tianracer/right_front_wheel"[label="Broadcaster: /tianracer/robot_state_publisher\nAverage rate: 50.223 Hz\nMost recent transform: 1103.661 ( 0.007 sec old)\nBuffer length: 4.480 sec\n"];
+"tianracer/base_link" -> "tianracer/right_steering_hinge"[label="Broadcaster: /tianracer/robot_state_publisher\nAverage rate: 50.223 Hz\nMost recent transform: 1103.661 ( 0.007 sec old)\nBuffer length: 4.480 sec\n"];
+"tianracer/base_link" -> "tianracer/right_rear_wheel"[label="Broadcaster: /tianracer/robot_state_publisher\nAverage rate: 50.223 Hz\nMost recent transform: 1103.661 ( 0.007 sec old)\nBuffer length: 4.480 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1103.668"[ shape=plaintext ] ;
+ }->"map";
+}
