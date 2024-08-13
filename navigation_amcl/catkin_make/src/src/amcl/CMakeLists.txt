@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(amcl)
+project(amcl_non_ros)
 
 # Find catkin and any catkin packages
 find_package(catkin REQUIRED COMPONENTS

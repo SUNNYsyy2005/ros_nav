@@ -1,5 +1,5 @@
 <package format="2">
-  <name>amcl</name>
+  <name>amcl_non_ros</name>
   <version>0.0.0</version>
   <description>The description of your package</description>
 
