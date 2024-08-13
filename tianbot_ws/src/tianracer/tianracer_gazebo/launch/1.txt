@@ -1,0 +1,22 @@
+roslaunch tianracer_gazebo tianracer_bringup.launch
+roslaunch tianracer_gazebo demo_slam_teb.launch
+roslaunch tianracer_gazebo demo_tianracer_teb_nav.launch
+rosrun tianracer_gazebo multi_goals.py __ns:=tianracer
+rosrun tianracer_gazebo follow_the_gap.py __ns:=tianracer
+
+roslaunch tianracer_gazebo demo_tianracer_teb_nav.launch
+rosrun tianracer_gazebo judge_system_node.py
+rosrun tianracer_gazebo 2.py __ns:=tianracer
+rosrun tianracer_gazebo f1tenth_racer.py __ns:=tianracer
+
+rosrun tianracer_gazebo multi_goals.py __ns:=tianracer
+
+roslaunch tianracer_slam tianracer_gmapping.launch
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py / cmd_vel:=/tianracer/cmd_vel
+
+roslaunch tianracer_gazebo click_waypoint.launch filename:=raicom_points
+
+roslaunch tianracer_gazebo demo_tianracer_teb_nav.launch
+roslaunch tianracer_slam gazebo_cartographer_2d.launch
+rosrun tianracer_gazebo follow_the_gap.py __ns:=tianracer
+roslaunch tianracer_slam gazebo_map_save.launch map_file:=my_map

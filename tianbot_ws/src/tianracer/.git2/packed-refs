@@ -1,0 +1,9 @@
+# pack-refs with: peeled fully-peeled sorted 
+a20554bbbfb4fb81308cd80efbf9307718a41ed6 refs/remotes/origin/dev
+184f9e4eee4f6b242b1a097b94a0394069f6ea06 refs/remotes/origin/galactic-devel
+992eda6e6fcff82eb4e28ef4d50e3d0c9afceaa6 refs/remotes/origin/master
+b2cadbf6ecaa26905de4e365faf70b8594dd3a76 refs/remotes/origin/plugin-test
+a56ad814cf410eae45156c6878e1cd7bf3371d82 refs/remotes/origin/pp-dev
+ca1fdc0caa381ad4d7d12c8b9d052397f4079226 refs/remotes/origin/refactor_multi_racer
+50e1039d7138d352d54c57259118a701350eb4b9 refs/tags/v1.0
+8cc6dfb010e4059c835ac26b8ba86fa4ab85207b refs/tags/v1.1

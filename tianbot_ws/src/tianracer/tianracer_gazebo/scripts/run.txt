@@ -1,0 +1,2 @@
+roslaunch tianracer_gazebo demo_tianracer_teb_nav.launch
+rosrun  tianracer_gazebo multi_goals.py __ns:=tianracer
