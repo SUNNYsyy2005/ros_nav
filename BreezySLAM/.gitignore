@@ -6,6 +6,7 @@ examples/*.pyc
 examples/*.pgm
 examples/*.png
 examples/*.map
+examples/*.dat
 examples/log2pgm
 python/breezyslam/*.pyc
 python/breezyslam/__pycache__
